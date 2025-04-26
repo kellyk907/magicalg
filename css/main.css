@@ -1,0 +1,935 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #DEE1FA;
+  text-shadow: none;
+}
+
+::selection {
+  background: #DEE1FA;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* General Styles */
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  color: #000000;
+  text-align: left;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.features-item-description {
+  font-size:medium;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.875em;
+}
+
+
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  margin: 20px 0;
+}
+
+img{
+ width:100%;
+}
+
+figure{
+  margin: 0;
+}
+
+p {
+  font-size: .875em;
+  line-height: 1.285;
+}
+
+address {
+  font-style: normal;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
+/* -------------------- Base Header - Footer Styles -------------------- */
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  background-color: #DEE1FA;
+}
+
+
+header .content-wrapper {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header figure {
+  width: 60%;
+}
+
+.header-divider {
+  background: #DEE1FA;
+  height: 1px;
+  width: 100%;
+  margin: 10px 0 20px 0;
+}
+
+header nav {
+  width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+header nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav ul li {
+  font-size: 1.125em;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #91799f91;
+}
+
+footer p {
+  margin: 0;
+ 
+}
+
+footer .content-wrapper {
+  width: 55%;
+ 
+}
+
+footer .contact {
+  margin-bottom: 50px;
+  
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  
+}
+
+footer .copyright {
+  margin: 20px 0;
+  
+}
+
+/* -------------------- Mobile Styles - Homepage -------------------- */
+
+/* Hero Area */
+
+.hero-area {
+  background: url(../img/bkgd.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; /* new add */
+  min-height: 500px; /* new add */
+  display: flex;
+  justify-content: center;
+}
+
+.hero-area h1 {
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* Aside */
+
+aside {
+  background-color: #DEE1FA;
+  display: flex;
+  justify-content: center;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #6b73be91;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #6b73be91;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #000000;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Features */
+
+
+.features {
+  background: url(../img/features.jpeg);
+  background-size: cover;
+  background-position: center;
+  display:flex;
+  justify-content:center;
+  /* background-repeat:repeat; */
+}
+
+.features h2 {
+  margin-bottom: 60px;
+}
+
+.features article {
+  width: 63%;
+  margin: 30px 0;
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+} /* new add */ 
+
+.features p {
+  text-align: center;
+  margin: 0;
+}
+
+/* Reviews */
+
+.reviews {
+  background-color:  #6b73be91;
+  display: flex;
+  justify-content:center;
+}
+
+.reviews h2 {
+  margin-bottom: 40px;
+  line-height: 1;
+}
+
+.reviews img {
+  height: 120px;
+  width: 200px;
+  display:flex;
+  justify-content:center;
+  
+}
+
+.reviews h3 {
+  width: 55%;
+  margin: 20px 0;
+}
+
+/* ==========================================================================
+   About Page
+   ========================================================================== */
+
+.mission {
+  background-color: #DEE1FA;
+  display: flex;
+  justify-content: center;
+}
+
+
+.map figure {
+  width:100%;
+  height:0; /* height is set to 0 because padding element gives the height & width will auto-size based on browser size */
+  position: relative; /* video said set to absolute, lesson says to set to relative idk */
+  padding-bottom: 70%; /* sets-up relationship bet. Ht and W of the map ie: map's aspect ratio instead of the width="600" height="450" 
+  4:3 aspect ratio from google will be used to maintain map on diff browswer sizes: 75% = 450/600, if wanted a square map then set padding-bottom to 100%*/
+ /* video says 75% but then lesson says 125%, Notes from lesson: Relative positioning means an element is positioned relative to its normal spot on the page. 
+ In other words, you can adjust it to the top, bottom, right, or left without interrupting the flow of the other elements on the page. That’s very important here because the map figure will be the container for the map. Because you’re placing the iFrame inside of this figure, you’ll also set the padding-bottom to 125% to create enough space for the map.*/
+  overflow:hidden; /* determines whether a child elment can exceed a parent's height and width; we don't want it to go over the map container box so overflow is set to hidden*/
+}
+
+.map iframe {
+  position:absolute; /* because the height is tech. 0 for the container this is needed for the box Notes from lesson: Absolute positioning means an element – like the map iFrame, in this example – will be positioned relative to the nearest parent element (the map figure). By using positioning in this way, 
+  the map can shrink or expand to be responsive without interrupting the flow of the page’s other elements. Everything stays nice and aligned and your map is responsive.*/
+  top: 0; /* so it fill fill the div container and be flush w the top of the container*/
+  left:0; /* so it fill fill the div container and be flush w the left of the container*/
+  width:100%; /* we want iframe of map to fill 100% of the width of iframe */
+  height:100%; /* we want iframe of map to fill 100% of the height of iframe */
+}
+.contact-section {
+  background-color:  #6b73be91;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-content p {
+  margin: 0;
+}
+/* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+
+.faq { 
+  background-color:#6b73be91;
+  display: flex;
+  justify-content: center;
+}
+
+.faq .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  margin: 50px 0 0 0;
+}
+
+.faq h2 {
+  margin-bottom: 40px;
+  line-height: 1;
+}
+
+.faq-content {
+  margin-bottom: 50px;
+
+}
+
+.faq-content h4 {
+  line-height: 1.333;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+  /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width:768px) {
+  /*Tablet styles here*/
+
+  /* General styles */
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
+
+  /* Header */
+  header {
+    padding: 33px 0;
+  }
+
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  header figure {
+    width: 30%;
+  }
+
+  header nav {
+    width: 20%;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  /* Hero Area */
+
+  .hero-area {
+    min-height: 600px;
+  }
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+  }
+
+  /* Aside */
+  aside .content-wrapper {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 40%;
+    margin: 0;
+  }
+
+  /* Features */
+
+  .features h2 {
+    margin-bottom: 20px;
+  }
+
+  .features article {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+    
+  }
+
+  .features .features-item-description {
+    width: 62%;
+  }
+
+  .features i {
+    margin-bottom: 30px;
+  } /*new add */
+
+  /* Reviews */
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews h2 {
+    width: 85%;
+  }
+
+  .reviews article div {
+    width: 49%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
+  }
+  
+  /* Footer */
+  footer .content-wrapper {
+    width: 65%;
+  
+  }
+
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+   
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer p {
+    line-height: 1.285;
+  }
+
+  footer .social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  
+  footer .social-icons p {
+    background-color: #;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer .social-icons p i {
+    font-size: 1.3125em;
+   
+  }
+  
+  footer .copyright {
+    width: 100%;
+  }
+
+  /* ==========================================================================
+   About Page
+   ========================================================================== */
+
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+
+  .mission-content p {
+    width: 45%;
+  }
+
+  .map figure {
+    padding-bottom: 45.5%;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding:20px;
+  }
+
+  .contact-content h4 {
+    font-size: 1.5em;
+  } 
+
+  /* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis: 45%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+
+  .faq h4,
+  .faq p {
+    font-size: .875em;
+    line-height: 1.125;
+  }
+}
+
+@media only screen and (min-width:1200px) {
+  /*Desktop styles here*/
+
+  /* General styles */
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  /* Header */
+  header {
+    padding: 15px 0;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.875em;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 1.333;
+  }
+
+  /* Hero */
+  .hero-area h1 {
+    font-size: 3.75em;
+    width: 80%;
+  }
+
+  /* Aside */
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 40%; }
+
+  .form-description p {
+    font-size: 1.125em;
+  }
+
+  /* Features */
+
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+
+
+  /* Reviews */
+
+  .reviews h2 {
+    padding-bottom: 50px;
+  }
+
+  .reviews article div {
+    width: 42%;
+  }
+  .reviews img {
+    height:400px;
+    width: 330px;
+  }
+  footer h4 {
+    font-size: 1.875em;
+  }
+
+  /* ==========================================================================
+  About Page
+  ========================================================================== */
+  .map figure {
+    padding-bottom: 37.5%;
+  }
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+    font-size: 3em;
+  }
+
+  .contact-content h4 {
+    font-size: 1.875em;
+  }
+
+  /* ==========================================================================
+  FAQ Page
+  ========================================================================== */
+  .faq h2 {
+    width: 100%;
+    font-size: 3em;
+  }
+
+  .faq h4,
+  .faq p {
+    font-size: 1.125em;
+    line-height: 1;
+  }
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " ("attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " ("attr(title) ")";
+  }
+
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
