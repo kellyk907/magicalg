@@ -197,16 +197,19 @@ header nav {
   font-size: 1.125em;
   font-weight: 700;
   text-transform: uppercase;
+  padding: 30px;
 }
 
 header nav ul {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  padding: 3px;
 }
 
 header nav ul li {
   font-size: 1.125em;
+padding: 5px;
 }
 
 footer {
@@ -677,7 +680,7 @@ input[type=button] {
   }
   
   footer .social-icons p {
-    background-color: #;
+    background: color #000;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -704,6 +707,7 @@ input[type=button] {
     justify-content: space-between;
     align-items: flex-start;
     padding-top: 20px;
+    padding:15px;
   }
 
   .mission-content p {
@@ -749,7 +753,7 @@ input[type=button] {
     font-size: .875em;
     line-height: 1.125;
   }
-}
+
 
 @media only screen and (min-width:1200px) {
   /*Desktop styles here*/
